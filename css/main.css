@@ -517,28 +517,42 @@ textarea {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/people.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
   background-color: var(--color-background-footer);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
-.hero__title {
+.hero__uptitle {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636;
+  font-size: 26px;
+  line-height: 1.6154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__uptitle {
+    font-size: 44px;
+    line-height: 1.3636;
+  }
 }
 
 .hero__btn {
@@ -657,10 +671,11 @@ textarea {
 .work {
   padding-top: 0px;
   padding-bottom: 94px;
+  display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .work {
-    visibility: hidden;
+    display: block;
   }
 }
 
@@ -935,11 +950,6 @@ textarea {
 .klient__link:hover, .klient__link:focus {
   border-color: var(--color-change);
   fill: var(--color-change);
-}
-
-.klient__icon {
-  width: 106px;
-  height: 60px;
 }
 
 .klient__icon:hover,
