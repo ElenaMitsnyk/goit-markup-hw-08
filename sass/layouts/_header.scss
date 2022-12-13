@@ -35,7 +35,7 @@
     
     .menu {
     list-style: none;
-    display: flex;
+    display: none;
     gap: 50px;
     margin-right: 288px;
     }
@@ -94,7 +94,7 @@
     }
 
     .contact {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 30px;
