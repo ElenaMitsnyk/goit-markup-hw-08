@@ -1,6 +1,12 @@
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0; 
+}
+
 .hero {
-    display: block;
-    max-width: 100%;    
+    display: flex;
+    max-width: 100%;
     height: auto;
     width: 100%;
     background-image: linear-gradient(
@@ -11,28 +17,35 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding: 118px 60px;
     text-align: center;
-    @media screen and (min-width: 1200px) {
+    @include mobile {
+        max-width: 100%;
+        } 
+    @include tablet {
+        max-width: 768px;
+        padding: 118px 189px;
+        } 
+    @include desktop {
+        max-width: 1200px;
         padding-top: 200px;
         padding-bottom: 200px;
-        }   
-    }
+        }      
+        }
     
     .hero__uptitle {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6154;
-    @media screen and (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.3636;
-        }   
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white);
     margin-bottom: 30px;
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.3636;
+        }   
     }
     
     .hero__btn {
