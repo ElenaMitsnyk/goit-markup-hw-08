@@ -125,9 +125,9 @@
     }
     }
     
-    .menu-open__icon {
-    position: absolute;
-    border: transparent;  
+    .menu-open {
+    background-color: transparent;
+    border: none;  
     }
 
     .menu-close {
@@ -164,6 +164,9 @@
     justify-content: space-between;
     overflow: auto;
     }
+@include tablet {
+display: none;
+}
     } 
 
     .menu-close {

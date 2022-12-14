@@ -72,6 +72,10 @@ body {
   cursor: pointer;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -515,9 +519,9 @@ textarea {
   color: var(--color-change);
 }
 
-.menu-open__icon {
-  position: absolute;
-  border: transparent;
+.menu-open {
+  background-color: transparent;
+  border: none;
 }
 
 .menu-close {
@@ -567,6 +571,11 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
 .menu-close {
