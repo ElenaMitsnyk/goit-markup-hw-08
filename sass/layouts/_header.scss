@@ -245,3 +245,10 @@ margin-bottom: 306px;
         text-decoration: none; 
  
     }
+
+    .mob-soc__item:not(:last-child) {
+        padding-right: 10px;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: rgba(33, 33, 33, 0.2);
+    }
