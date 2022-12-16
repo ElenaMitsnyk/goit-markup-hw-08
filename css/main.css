@@ -399,6 +399,17 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .header__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+}
 
 .header__logo {
   font-family: "Raleway", sans-serif;
@@ -420,15 +431,23 @@ textarea {
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: var(--color-logo-second);
-  margin-right: 93px;
+  margin-right: 88px;
   cursor: text;
 }
 
 .menu {
   list-style: none;
-  display: none;
   gap: 50px;
   margin-right: 288px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 96px;
+  }
 }
 
 .menu__link {
@@ -484,7 +503,6 @@ textarea {
 }
 
 .contact {
-  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -492,6 +510,31 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
 }
 
 .contact__icons {
@@ -502,6 +545,11 @@ textarea {
 }
 .contact__list:hover .contact__icons, .contact__list:focus .contact__icons {
   fill: var(--color-change);
+}
+@media screen and (min-width: 768px) {
+  .contact__icons {
+    margin-right: 8px;
+  }
 }
 
 .contact__link {
@@ -520,9 +568,17 @@ textarea {
 }
 
 .menu-open {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {

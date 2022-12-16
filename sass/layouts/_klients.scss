@@ -1,7 +1,7 @@
 .klient {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
         }
@@ -15,7 +15,7 @@
     letter-spacing: 0.03em;
     color: var(--color-title);
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-size: 36px;
         line-height: 1.1667;  
         margin-bottom: 50px; 
@@ -30,11 +30,11 @@
     
     .klient__item {
     width: 100%; 
-        width: calc((100% - 30px) / 2);
-    @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    @include tablet {
         width: calc((100% - 60px) / 3);   
         }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: calc((100% - 150px) / 6);   
         }
     }
@@ -45,10 +45,10 @@
     height: auto;
     width: 100%;
     padding: 16px 52px;
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding: 16px 60px; 
         }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding: 16px 32px; 
         }
     align-items: center;
