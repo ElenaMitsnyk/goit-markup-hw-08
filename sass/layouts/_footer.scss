@@ -2,23 +2,30 @@
     background-color: var(--color-background-footer);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin: 0 auto;
     }
 
     .footer a{
     text-decoration: none;
     }
     
-    .footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
+    .footer__container {
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+    // justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
     }
     
     .footer-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
     }
 
     .footer-list-list {
@@ -32,14 +39,14 @@
     line-height: 1.1923;
     letter-spacing: 0.03em;
     color: var(--color-change);
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     }
     
     .footer-logo-color {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1923;
+    font-size: 24px;
+    line-height: 1.1667;
     letter-spacing: 0.03em;
     color: var(--color-white);
     }
@@ -47,10 +54,10 @@
     .footer-address {
     font-style: normal;
     font-size: 14px;
-    line-height: 1.7142;
+    line-height: 1.1428;
     letter-spacing: 0.03em;
     color: var(--color-white);
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -64,7 +71,7 @@
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -74,16 +81,18 @@
     
     .logo-and-address {
     display: flex; 
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: baseline;
-    width: 231px;
+    justify-content: center;
+    align-items: center;
     }
     
     .footer-icons {
     display: flex; 
     flex-direction: column;
-    align-items: baseline;
-    width: 206px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
     }
     
     .footer-soc {
@@ -134,14 +143,20 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-white);
-    margin-bottom: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
     }
     
     .footer-subscriptione-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 12px;
+
     }
     
     .footer-input {
@@ -170,6 +185,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     }
+    margin-top: 20px;
+    margin-bottom: 20px;
     }
 
     .subscriptione-btm {
