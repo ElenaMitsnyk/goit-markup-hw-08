@@ -699,7 +699,7 @@ textarea {
   margin-bottom: 64px;
 }
 
-.mob-contact__mail {
+.mob-contact__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.1765;
@@ -708,7 +708,7 @@ textarea {
   text-decoration: none;
 }
 
-.mob-contact__tel {
+.mob-contact__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1667;
@@ -1378,6 +1378,9 @@ textarea {
   .footer-icons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {

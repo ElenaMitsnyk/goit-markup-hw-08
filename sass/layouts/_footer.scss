@@ -106,6 +106,7 @@
     margin-bottom: 60px;
     @include tablet {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     @include desktop {
         margin-right: 94px;
