@@ -529,6 +529,7 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
     width: 100%;
     gap: 10px;
   }
@@ -601,6 +602,9 @@ textarea {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.menu-open:hover, .menu-open:focus {
+  fill: var(--color-change);
 }
 @media screen and (min-width: 768px) {
   .menu-open {
@@ -1468,13 +1472,11 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     right: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     top: 12px;
-    margin: 0;
   }
 }
 
@@ -1482,8 +1484,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

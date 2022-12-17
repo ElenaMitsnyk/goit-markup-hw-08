@@ -167,20 +167,18 @@
     
     .footer-subscriptione {
     @include tablet {
-        margin: 0 auto;
+    margin: 0 auto;
     }   
     @include desktop {
     display: flex;
+    align-items: baseline;
     right: 0;
-    flex-direction: column;
     top: 12px;
-    margin: 0;
     }
     }
     
     .footer-subscriptione-wrapper {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;

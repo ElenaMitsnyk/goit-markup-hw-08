@@ -112,13 +112,11 @@
     }
 
     .contact {
-    // align-items: center;
-    // justify-content: center;
-    // gap: 30px;
     display: none;
     @include tablet {
         display: flex;
         flex-direction: column;
+        margin-left: auto;
         width: 100%;
         gap: 10px;
     }
@@ -174,6 +172,10 @@
     background-color: transparent;
     border: none;  
     cursor: pointer;
+    &:hover,
+    &:focus {
+        fill: var(--color-change);
+        }
     @include tablet {
         display: none;
     }
