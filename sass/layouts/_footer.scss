@@ -23,6 +23,7 @@
         max-width: 1200px;
         width: 100%;
         align-items: baseline;
+        margin: 0;
     }
     }
     
@@ -196,6 +197,8 @@
     gap: 12px;
     @include desktop {
         flex-wrap: nowrap;
+        align-items: baseline;
+        flex-direction: row;
     }
     }
     
