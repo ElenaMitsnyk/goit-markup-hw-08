@@ -1283,6 +1283,13 @@ textarea {
           align-items: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 
 .footer-list-list {
   margin-bottom: 9px;
@@ -1355,6 +1362,9 @@ textarea {
 @media screen and (min-width: 1200px) {
   .logo-and-address {
     margin-right: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1386,6 +1396,9 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-icons {
     margin-right: 94px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

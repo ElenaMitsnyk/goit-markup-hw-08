@@ -16,7 +16,6 @@
     background-size: cover;
     padding: 118px 60px;
     text-align: center;
-   
     @include retina {
     background-image: var(--gradient), 
     url(../../images/hero-mob-2x.jpeg);
