@@ -25,7 +25,11 @@
     @include desktop {
         max-width: 528px;
     }
+    @media screen and (max-width: 480px) {
+        max-width: 450px;
     }
+    }
+
     
     .modal-form {
     display: flex;

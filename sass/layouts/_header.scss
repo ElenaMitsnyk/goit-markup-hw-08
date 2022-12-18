@@ -231,19 +231,6 @@ display: none;
 .menu-list__item:not(:last-child) {
     margin-bottom: 32px;
 }
-
-.menu-list {
-margin-bottom: 306px;
-}
-
-    .menu-list__link_accent {
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.175;
-        letter-spacing: 0.02em;
-        color: var(--color-change);
-        text-decoration: none;
-    }
     
     .menu-list__link {
         font-weight: 500;
@@ -252,6 +239,10 @@ margin-bottom: 306px;
         letter-spacing: 0.02em;
         color: var(--color-title);
         text-decoration: none;
+        &:hover,
+        &:focus {
+            color: var(--color-change);
+        }
     }
 
     .mob-contact__item:not(:last-child) {
