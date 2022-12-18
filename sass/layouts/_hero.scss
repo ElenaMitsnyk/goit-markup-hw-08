@@ -9,7 +9,7 @@
     height: auto;
     width: 100%;
     background-image: var(--gradient), 
-    url(../../images/hero-mob.jpeg);
+    url(../images/hero-mob.jpeg);
     background-color: var(--color-background-footer);
     background-repeat: no-repeat;
     background-position: center;
@@ -18,26 +18,26 @@
     text-align: center;
     @include retina {
     background-image: var(--gradient), 
-    url(../../images/hero-mob-2x.jpeg);
+    url(../images/hero-mob-2x.jpeg);
     }
 
     @include mobile {
     max-width: 100%;
     background-image: var(--gradient), 
-    url(../../images/hero-tab.jpeg);
+    url(../images/hero-tab.jpeg);
     @include retina {
     background-image: var(--gradient), 
-    url(../../images/hero-tab-2x.jpeg);
+    url(../images/hero-tab-2x.jpeg);
     } 
     }
     
     @include tablet {
     padding: 118px 189px;
     background-image: var(--gradient), 
-    url(../../images/hero-desk.jpeg);
+    url(../images/hero-desk.jpeg);
     @include retina {
     background-image: var(--gradient), 
-    url(../../images/hero-desk-2x.jpeg);
+    url(../images/hero-desk-2x.jpeg);
     } 
     @include desktop {
     padding-top: 200px;

@@ -52,9 +52,6 @@
     @include tablet {
     display: flex;
     }
-    @include desktop {
-    
-    }
     }
 
     .menu__link {
@@ -200,13 +197,15 @@
         }
 
     .mob-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-white);
-    padding: 48px 83px 48px 40px;
+    padding: 40px 40px 40px 40px;
     > .container {
     height: 100%;
     display: flex;
@@ -218,6 +217,10 @@
 display: none;
 }
     } 
+
+    .mob-menu-bottom{
+        margin-top: auto;
+    }
 
     .menu-close {
         display: block;
@@ -261,8 +264,8 @@ margin-bottom: 306px;
     
         .mob-contact__tel {
         font-weight: 500;
-        font-size: 34px;
-        line-height: 1.1765;
+        font-size: 24px;
+        line-height: 1.1667;
         letter-spacing: 0.02em;
         color: var(--color-change);
         text-decoration: none;
@@ -279,6 +282,7 @@ margin-bottom: 306px;
 
     .mob-soc {
        display: flex;
+       flex-wrap: wrap;
        list-style: none;
        gap: 10px;
        justify-content: space-between;
